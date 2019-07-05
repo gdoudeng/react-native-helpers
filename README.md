@@ -25,7 +25,6 @@ npm i @freakycoder/react-native-helpers
 "@freakycoder/react-native-helpers": "WrathChaos/@freakycoder/react-native-helpers#expo"
 ```
 
-
 ## Peer Dependencies
 
 ###### IMPORTANT! You need install them.
@@ -33,10 +32,10 @@ npm i @freakycoder/react-native-helpers
 ```
 "react": ">= 16.x.x",
 "react-native": ">= 0.55.x",
-"@react-native-community/status-bar": "^1.x.x"
 ```
 
 ## DeviceInfo Usage
+
 ```js
 import {
   Screen,
@@ -50,10 +49,11 @@ import {
   <Container title="Device OS" subtitle={isIOS ? "iOS" : "Android"} />
   <Container title="Screen Height" subtitle={ScreenHeight} />
   <Container title="Screen Width" subtitle={ScreenWidth} />
-</View>
+</View>;
 ```
 
 ## Noth (iPhoneX & StatusBar) Usage
+
 ```js
 import {
   isIPhoneXFamily,
@@ -66,22 +66,20 @@ import {
 } from "react-native-helpers";
 
 <View>
-   <Container
-     title="hasNotch?"
-     subtitle={hasNotch() ? "iPhone X Family" : "iPhone Family"}
-   />
-   <Container
-     title="isIPhoneXsMax?"
-     subtitle={isIPhoneXsMax(Screen) ? "iPhone XsMax" : "NOT iPhone XsMax"}
-   />
-   <Container
-     title="getStatusBarHeight?"
-     subtitle={getStatusBarHeight()}
-   />
-</View>
+  <Container
+    title="hasNotch?"
+    subtitle={hasNotch() ? "iPhone X Family" : "iPhone Family"}
+  />
+  <Container
+    title="isIPhoneXsMax?"
+    subtitle={isIPhoneXsMax(Screen) ? "iPhone XsMax" : "NOT iPhone XsMax"}
+  />
+  <Container title="getStatusBarHeight?" subtitle={getStatusBarHeight()} />
+</View>;
 ```
 
 ## Normalize Text Usage
+
 Method to normalize size of fonts across devices
 
 ```js
@@ -90,18 +88,14 @@ import normalizeText from "./lib/src/helpers/normalize/normalizeText";
 fontSize: normalizeText(24),
 ```
 
-
 ## Credits
 
-<b>NormalizeText</b> is completely coming from <b>react-native-elements</b>. All credits goes to <b>@xiaoneng</b> and RN Elements team. Thank you so much guys. 
-
-
+<b>NormalizeText</b> is completely coming from <b>react-native-elements</b>. All credits goes to <b>@xiaoneng</b> and RN Elements team. Thank you so much guys.
 
 ### ToDos
 
 - [x] LICENSE
 - [ ] Write an article about the lib on Medium
-
 
 ## Author
 
