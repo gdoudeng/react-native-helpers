@@ -24,12 +24,6 @@ Add the dependency:
 npm i @freakycoder/react-native-helpers
 ```
 
-### Expo Version
-
-```ruby
-"@freakycoder/react-native-helpers": "WrathChaos/@freakycoder/react-native-helpers#expo"
-```
-
 ## Peer Dependencies
 
 ###### IMPORTANT! You need install them.
